@@ -1,14 +1,18 @@
+// importing stylesheet
 import './App.css'
+
+// importing all the components
 import Favourites from "./Components/Favourites"
 import Search from "./Components/Search"
 import Meals from "./Components/Meals"
 import Modal from "./Components/Modal"
 
-import { useGlobalContext } from './Context'
+// import context api
+import * as Context from './Context'
 import { Header } from './Components/Header'
 function App() {
 
-  const { showModal, favorites } = useGlobalContext()
+  const { showModal, favorites } = Context.useGlobalContext()
 
 
   return (
